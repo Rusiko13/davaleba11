@@ -1,0 +1,35 @@
+@media (max-width: 1024px) {
+  header {
+    position: relative;
+  }
+  button {
+    display: none;
+  }
+
+  /* styleshi momitsia img tag it gamodzakheba da aq classit rom emushava */
+  .contact-us {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+  .contact-us:hover{
+    transition: all 2s 0.05s;
+    position: absolute;
+    bottom: 0;
+    margin-right: 20px;
+    scale: 2;
+   
+  }
+  .select-button:hover button {
+    /* აქ მინდოდა რომ ლენგიჯს ასარჩევად რომ დააჭერს მომხმარებელი,
+     ქონთაქთ აზი დადგეს შუაში */
+    /* bottom: 0;
+    left:0;
+    margin: 5px 21px; */
+    /* translate(x): (-50%); */
+    /* right: 50%;
+    transform: translate(x)(-50%); */
+  }
+}

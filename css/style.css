@@ -1,0 +1,140 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 178px;
+  width: 100%;
+  background-color: #191a19;
+}
+
+header h1 {
+  font-family: "Unlock";
+  font-size: 41px;
+  font-weight: 400;
+  color: #ff7420;
+}
+header ul {
+  display: flex;
+  column-gap: 24px;
+}
+header a,
+select,
+button {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+select {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+select:hover {
+  background-color: #ff7420;
+  border-radius: 12px;
+}
+select option {
+  background-color: silver;
+  color: #191a19;
+  /* border: none;
+  border-radius: 20px; */
+}
+#languages option {
+  background-color: yellow;
+}
+button {
+  background-color: #ff7420;
+  width: 194px;
+  height: 66px;
+  border-radius: 15px;
+  border: none;
+  margin-left: 24px;
+}
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7420;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+
+  transition: all 0.7s linear;
+}
+.underline:hover::after {
+  width: 100%;
+}
+.underline:hover {
+  color: #ff7420;
+  transition: all 0.7s linear;
+}
+.select-button {
+  display: flex;
+}
+.contact-us {
+  display: none;
+}
+.mainpic {
+  padding-left: 112px;
+  padding-top: 153px;
+}
+.mainpic {
+  background-image: url(../photos/mainpic.png);
+  width: 100%;
+  height: 936px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mainpic h1 {
+  font-family: "Poppins";
+  font-size: 64px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+span {
+  color: #ff7420;
+}
+.mainpic p {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #ffffff;
+  width: 602px;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+main button {
+  width: 264px;
+  height: 66px;
+  margin: 0;
+  position: relative;
+}
+.main-button2 {
+  background-color: #ffffff;
+  color: #191a19;
+  margin-left: 24px;
+}
+button span {
+  width: 25px;
+  height: 25px;
+  background-color: #ff7420;
+  position: absolute;
+  bottom: 20px;
+  right: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button span i {
+  color: white;
+  font-size: 15px;
+}
