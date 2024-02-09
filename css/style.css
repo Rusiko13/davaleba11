@@ -304,11 +304,22 @@ h6 {
   color: #fff;
   margin-bottom: 15px;
 }
-input,
-textarea {
+input {
   width: 277px;
   height: 76px;
   border-radius: 19px;
+  border: none;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 40px;
+  outline: none;
+}
+#textarea {
+  width: 577px;
+  height: 140px;
+  border-radius: 19px;
+  margin-left: 6px;
   border: none;
   font-family: "Poppins";
   font-size: 20px;
@@ -322,6 +333,14 @@ form {
   column-gap: 10px;
   row-gap: 18px;
 }
+#phone {
+  margin-left: 9px;
+}
+#services {
+  width: 277px;
+  margin-left: 1px;
+}
+
 .bigger-Box select {
   width: 291px;
   height: 76px;
@@ -374,31 +393,31 @@ h6 {
   font-style: italic;
   line-height: 29px;
 }
-/* .footer {
+.footer-up {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
-.footer h1 {
+.footer-up h1 {
   color: #fff;
 }
-.footer label {
+.footer-up label {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
+  color: white;
 }
 .footer input {
-  width: 250px;
+  width: 288px;
+  padding: 0;
   height: 76px;
   background-color: transparent;
-  border-bottom: 1px solid #ffffff80;
-  border-radius: 19px;
-  border: none;
   font-family: "Poppins";
-  font-size: 20px;
+
   font-weight: 400;
-  padding-left: 40px;
+
   outline: none;
   color: #ffffff80;
-} */
+}
