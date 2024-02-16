@@ -1,35 +1,63 @@
 @media (max-width: 1024px) {
-  header {
-    position: relative;
+  header ul,
+  .section1-titles ul,
+  .section2 .main,
+  .footer-up {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
   }
-  button {
-    display: none;
+  .footer-down {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-bottom: 16px;
   }
-
-  /* styleshi momitsia img tag it gamodzakheba da aq classit rom emushava */
-  .contact-us {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
+  .mainpic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .contact-us:hover{
-    transition: all 2s 0.05s;
-    position: absolute;
-    bottom: 0;
-    margin-right: 20px;
-    scale: 2;
-   
-  }
-  .select-button:hover button {
-    /* აქ მინდოდა რომ ლენგიჯს ასარჩევად რომ დააჭერს მომხმარებელი,
-     ქონთაქთ აზი დადგეს შუაში */
-    /* bottom: 0;
-    left:0;
-    margin: 5px 21px; */
-    /* translate(x): (-50%); */
-    /* right: 50%;
-    transform: translate(x)(-50%); */
+  .bigger-box select {
+    font-size: 20px;
   }
 }
+
+/* for tablet 744px */
+@media (max-width: 744px) {
+  header ul {
+    flex-direction: row;
+  }
+  header {
+    flex-direction: column;
+  }
+  .mainpic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-down {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+/* for mobile */
+@media (max-width: 375px) {
+  header nav {
+    display: none;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+  .photos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+ 
+}
+

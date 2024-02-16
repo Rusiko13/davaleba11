@@ -73,9 +73,6 @@ button {
 .select-button {
   display: flex;
 }
-.contact-us {
-  display: none;
-}
 .mainpic {
   width: 100%;
   height: 553px;
@@ -101,7 +98,7 @@ span {
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
-  width: 602px;
+  width: 50%;
   margin-top: 20px;
   margin-bottom: 55px;
 }
@@ -143,7 +140,7 @@ button span i {
   padding-top: 50px;
   margin-bottom: 40px;
 }
-ul {
+.section1-titles > ul {
   display: flex;
   column-gap: 14px;
 }
@@ -276,27 +273,27 @@ h6 {
   color: #ffffff;
   margin-bottom: 121px;
 }
-.section2 section {
+.section2 .main {
   display: flex;
   column-gap: 41px;
   padding-inline: 65px;
 }
 
-.bigger-Box {
-  width: 925px;
-  height: 661px;
+.bigger-box {
+  width: auto;
+  height: auto;
   background-color: #ff7420;
   padding: 53px;
   border-radius: 15px;
 }
-.bigger-Box h5 {
+.bigger-box h5 {
   font-family: "Poppins";
   font-size: 24px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 15px;
 }
-.bigger-Box p {
+.bigger-box p {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
@@ -304,8 +301,8 @@ h6 {
   color: #fff;
   margin-bottom: 15px;
 }
-input {
-  width: 277px;
+.bigger-box input {
+  width: 45%;
   height: 76px;
   border-radius: 19px;
   border: none;
@@ -316,7 +313,7 @@ input {
   outline: none;
 }
 #textarea {
-  width: 577px;
+  width: 94%;
   height: 140px;
   border-radius: 19px;
   margin-left: 6px;
@@ -337,12 +334,12 @@ form {
   margin-left: 9px;
 }
 #services {
-  width: 277px;
+  width: 45%;
   margin-left: 1px;
 }
 
-.bigger-Box select {
-  width: 291px;
+.bigger-box select {
+  width: 45%;
   height: 76px;
   background-color: #fff;
   color: #191a1980;
@@ -352,25 +349,25 @@ form {
   font-family: "Poppins";
   margin: 0;
 }
-.bigger-Box textarea {
+.bigger-box textarea {
   width: 98%;
   height: 148px;
   padding-top: 25px;
 }
-.bigger-Box button,
+.bigger-box button,
 .smaller-box button {
-  width: 99.5%;
+  width: 94%;
   height: 76px;
   border: none;
   background-color: #191a19;
   border-radius: 19px;
 }
 .smaller-box {
-  width: 499px;
-  height: 661px;
+  width: auto;
+  height: auto;
   border-radius: 15px;
   background-color: #ff7420;
-  padding: 50px;
+  padding: 53px;
 }
 .smaller-box h3,
 h6 {
@@ -382,16 +379,21 @@ h6 {
 }
 .smaller-box p {
   font-family: "Poppins";
-  font-size: 13px;
+  font-size: 17px;
   color: #fff;
   margin-bottom: 30px;
 }
 .smaller-box h6 {
   margin-top: 50px;
   margin-bottom: 65px;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
-  line-height: 29px;
+  line-height: 20px;
+  width: 120%;
+}
+.footer {
+  margin-top: 53px;
+  padding-inline: 65px;
 }
 .footer-up {
   width: 100%;
@@ -399,6 +401,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 29px;
 }
 .footer-up h1 {
   color: #fff;
@@ -409,15 +412,102 @@ h6 {
   font-weight: 400;
   color: white;
 }
-.footer input {
+.footer-up input {
   width: 288px;
   padding: 0;
-  height: 76px;
+  height: 38px;
   background-color: transparent;
   font-family: "Poppins";
-
   font-weight: 400;
-
   outline: none;
   color: #ffffff80;
+  border: none;
+  border-bottom: 2px solid #ffffff80;
+  padding: 0;
+}
+.footer-up > div {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.footer-up > div > div {
+  position: relative;
+}
+.footer-up > div > div > i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+  /* column-gap: 40px; */
+}
+
+.footer-down h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.footer-down p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+.footer-down li {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer-down img {
+  margin-right: 15px;
+  margin-top: 20px;
+}
+.about-us p {
+  width: 389px;
+}
+.contact p {
+  width: 269px;
+}
+.office p {
+  width: 338px;
+}
+.burger-bar {
+  display: none;
+  /* width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ff7420;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px; */
+}
+.burger-lines {
+  width: 15.12px;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .burger-bar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ff7420;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4px;
+  }
 }
